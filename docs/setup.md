@@ -20,12 +20,29 @@ All you need to do to get started is to make a class and annotate it with `@Goob
 For those of you who dearly miss your beloved builderslop, we have that! For those of you who don't, we've heavily condensed the process to allow more time for writing real code instead of config code.
 
 ```java
-public static final IntOption int1 = new IntOption("Standalone field", "meow");
+@GooberConfig(modId = "testmod")
+public class TestConfig {
+  public static final IntOption int1 = new IntOption("Standalone field", "meow");
 
-public static final GooberConfigBuilder BUILDER = GooberConfigBuilder
-          //overloads for passing either a String or a Text object
-          .create("YEAH!!!")
-            .category("Int fields", "A description")
-              .options(int1)
-            .build();
+  // GooberLib looks for a field of type GooberConfigBuilder
+  public static final GooberConfigBuilder BUILDER = GooberConfigBuilder
+            // overloads for passing either a String or a Text object
+            .create("YEAH!!!")
+              .category("Int fields", "A description")
+                .options(int1)
+                .build();
+}
+```
+
+Alternatively, use MAGIC (Multi-Annotation GooberLib-Inferred Configuration):
+
+```java
+@GooberConfig(modId = "testmod")
+public class TestConfig {
+
+  // If a GooberConfigBuilder field is not found, MAGIC will be used instead.
+  // TODO:
+  public static final IntOption int1 = new IntOption("Standalone field", "meow");
+
+}
 ```
