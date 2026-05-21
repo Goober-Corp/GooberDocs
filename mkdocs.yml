@@ -5,6 +5,7 @@ repo_url: https://github.com/Goober-Corp/GooberLib
 repo_name: Goober-Corp/GooberLib
 
 theme:
+  name: material
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
