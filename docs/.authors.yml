@@ -1,5 +1,13 @@
 authors:
-  nathancatania:
-    name: Nathan Catania
+  tektonikal:
+    name: Tektonikal
     description: "Author"
-    avatar: https://github.com/nathancatania.png
+    avatar: https://github.com/tektonikal.png
+  zupa:
+    name: zupa
+    description: "Author"
+    avatar: https://github.com/rexgamer338571.png
+  kr1v:
+    name: kr1v
+    description: "Author"
+    avatar: https://github.com/kr1viah.png
