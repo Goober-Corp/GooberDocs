@@ -1,8 +1,8 @@
 site_name: GooberDocs
 site_url: "https://docs.goobercorp.com"
-site_description: "Official Documentation of GooberCorp projects"
-repo_url: https://github.com/Goober-Corp/GooberDocs
-repo_name: Goober-Corp/GooberDocs
+site_description: "Official Documentation of GooberLib"
+repo_url: https://github.com/Goober-Corp/GooberLib
+repo_name: Goober-Corp/GooberLib
 
 theme:
   name: material
