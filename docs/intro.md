@@ -29,7 +29,7 @@ GooberLib provides the basic set of options such as primitives, `String`s and li
 
 Like the average config library, configs are organized into categories and sections (or groups). GooberLib goes a step further with child options, letting you have options that are grouped together or depend on each other, which is visibly indicated.
 
-![Our mascot, Kenny, in the background.]("assets/images/child-options.png")
+![Our mascot, Kenny, in the background.](assets/images/child-options.png)
 
 ## Custom Widget Providers
 
