@@ -17,7 +17,7 @@ comments: false
 
 All you need to do to get started is to make a class and annotate it with `@GooberConfig(modId = "testmod")`
 
-For those of you who dearly miss your beloved builderslop, we have that! For those of you who don't, we've heavily condensed the process to allow more time for writing real code instead of config code.
+For those of you who dearly miss your beloved builderslop, we have that! 
 
 ```java
 @GooberConfig(modId = "testmod")
@@ -32,6 +32,23 @@ public class TestConfig {
                 .options(int1)
                 .build();
 }
+```
+
+For those of you who don't, we've heavily condensed the process to allow more time for writing real code instead of config code.
+
+```java
+
+@GooberConfig(modId = "testmod")
+public class TestConfig {
+  public static final IntOption int1 = new IntOption("Standalone field", "meow");
+  public static final GooberConfigBuilder BUILDER = GooberConfigBuilder.create("YEAH!!!", config -> {
+	  config.category("Int fields", "A description", category -> {
+			category.options(int1);
+			// No .build()!
+		});
+	});
+}
+	
 ```
 
 Alternatively, use MAGIC (Multi-Annotation GooberLib-Inferred Configuration):
