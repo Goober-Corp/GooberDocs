@@ -4,5 +4,5 @@ description = "Documentation for GooberLib"
 version = "0.0.0"
 license = "MIT"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = ["mkdocs-material>=9.7.6"]
