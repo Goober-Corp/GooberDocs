@@ -1,9 +1,8 @@
 [project]
-name = "website"
+name = "gooberdocs"
+description = "Documentation for GooberLib"
 version = "0.0.0"
-description = "GooberDocs"
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "mkdocs-material>=9.7.6",
-]
+dependencies = ["mkdocs-material>=9.7.6"]
